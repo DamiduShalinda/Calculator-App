@@ -168,18 +168,18 @@ class MainActivity : AppCompatActivity() {
             answer = firstNum + secondNum
 
         }
-        if ("*" in number){
-            id1 = number.indexOf("+")+1
+        else if ("*" in number){
+            id1 = number.indexOf("*")+1
             secondNum = number.substring(id1,length).toDouble()
             answer = firstNum * secondNum
         }
-        if ("/" in number){
-            id1 = number.indexOf("+")+1
+        else if ("/" in number){
+            id1 = number.indexOf("/")+1
             secondNum = number.substring(id1,length).toDouble()
             answer = firstNum / secondNum
         }
-        if ("-" in number){
-            id1 = number.indexOf("+")+1
+        else if ("-" in number){
+            id1 = number.indexOf("-")+1
             secondNum = number.substring(id1,length).toDouble()
             answer = firstNum - secondNum
         }
