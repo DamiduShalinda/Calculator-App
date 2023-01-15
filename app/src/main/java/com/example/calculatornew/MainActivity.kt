@@ -121,6 +121,10 @@ class MainActivity : AppCompatActivity() {
             number1 += "+"
             ans.text = number1
             finalAns.text = ""
+            sum.isClickable = false
+            sub.isClickable = false
+            divide.isClickable = false
+            multiply.isClickable = false
         }
 
         sub = findViewById(R.id.subBtn)
@@ -129,6 +133,10 @@ class MainActivity : AppCompatActivity() {
             number1 += "-"
             ans.text = number1
             finalAns.text = ""
+            sum.isClickable = false
+            sub.isClickable = false
+            divide.isClickable = false
+            multiply.isClickable = false
         }
 
         divide = findViewById(R.id.divideBtn)
@@ -137,6 +145,10 @@ class MainActivity : AppCompatActivity() {
             number1 += "/"
             ans.text = number1
             finalAns.text = ""
+            sum.isClickable = false
+            sub.isClickable = false
+            divide.isClickable = false
+            multiply.isClickable = false
         }
 
         multiply = findViewById(R.id.multiplyBtn)
@@ -145,6 +157,10 @@ class MainActivity : AppCompatActivity() {
             number1 += "*"
             ans.text = number1
             finalAns.text = ""
+            sum.isClickable = false
+            sub.isClickable = false
+            divide.isClickable = false
+            multiply.isClickable = false
         }
 
         eql = findViewById(R.id.equalBtn)
@@ -152,7 +168,10 @@ class MainActivity : AppCompatActivity() {
             final = gettingAnswer(number1 , number1final).toString()
             finalAns.text = final
             number1 = final
-
+            sum.isClickable = true
+            sub.isClickable = true
+            divide.isClickable = true
+            multiply.isClickable = true
         }
     }
 
